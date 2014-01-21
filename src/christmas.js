@@ -7,10 +7,3 @@ function drawTree (treeSize) {
 	tree += 	 "   |_|   \n";
 	return tree;
 }
-
-$(document).ready(function(){
-	$("#compute-tree").click(function(){
-		var size = parseInt($("#tree-size").val());
-		$("#christmas-tree").append(drawTree(size));
-	});
-});
