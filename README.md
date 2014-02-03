@@ -7,7 +7,7 @@
 * Chaque ligne a au moins une etoile (a part le tronc),
 * Toutes les 4 lignes, la base doit etre reduite d'une etoile,
 * Le tronc doit faire 1/3 de la largeur de la base du sapin.
-* 
+
 ### Outils ###
 * [Jasmine](http://jasmine.github.io/2.0/introduction.html) : Framework de test javascript.
 * [javascripture](http://www.javascripture.com/) : documentation javascript.
