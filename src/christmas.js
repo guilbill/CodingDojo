@@ -6,7 +6,7 @@ function drawTree (treeSize) {
 	var tree = "";
 	var touteLesQuatreLignes = 0;
 	for (var i = 0; i < treeSize; i++) {
-		if ((i % 5) == 0) touteLesQuatreLignes+=2;
+		if (i > 0 && (i % 4) == 0) touteLesQuatreLignes+=2;
 		var branche="";
 		for (var j = 0; j <= i - touteLesQuatreLignes; j++) {
 			branche+="* ";
