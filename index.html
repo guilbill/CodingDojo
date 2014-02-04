@@ -1,26 +1,36 @@
 <html>
 <head>
 	<title>coding Dojo - Christmas tree </title>
+	<link type="text/css" rel="stylesheet" href="./styles/christmas.css">
+	<link type="text/css" rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-<div id="tree-options">
-	<label for="tree-size">Taille du sapin : </label>
-	<input type="text" id="tree-size"/><br/>
-	<button id="compute-tree">Dessiner le sapin</button>
-</div>
-<div class="text-align:center">
-	 <textarea rows="150" cols="200" id="christmas-tree"></textarea>
-</div>
-<script type="text/javascript" src="./lib/jquery.js"></script>
-<script type="text/javascript" src="./src/christmas.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$("#compute-tree").click(function(){
-		var size = parseInt($("#tree-size").val());
-		$("#christmas-tree").empty();
-		$("#christmas-tree").append(drawTree(size));
+	<div class="container">
+	<h1>Christmas Tree</h1>
+		<form id="tree-options">
+			<div class="input-group">
+				<span class="input-group-addon">Taille du sapin :</span>
+				<input class="form-control" type="text" id="tree-size"/><br/>
+			</div>
+				<input class="button form-control" type="submit" value="Dessiner le sapin"/>
+		</form>
+		<div>
+			 <textarea class="tree-container col-md-12" id="christmas-tree"></textarea>
+		</div>
+	</div>
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="./lib/jquery.js"></script>
+	<script type="text/javascript" src="./src/christmas.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#tree-options").submit(function(event){
+			event.preventDefault();
+			var size = parseInt($("#tree-size").val());
+			$("#christmas-tree").empty();
+			$("#christmas-tree").append(drawTree(size));
+		});
 	});
-});
-</script>
+	</script>
 </body>
 </html>

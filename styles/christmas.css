@@ -1,0 +1,8 @@
+.tree-container {
+	text-align: center;
+	background-color: black;
+	color: green;
+	font-weight: bold;
+	height:100%;
+	font-family:monospace;
+}
