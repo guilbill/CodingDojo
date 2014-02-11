@@ -11,3 +11,4 @@
 ### Outils ###
 * [Jasmine](http://jasmine.github.io/2.0/introduction.html) : Framework de test javascript.
 * [javascripture](http://www.javascripture.com/) : documentation javascript.
+* [regextester](http://www.regextester.com/) : validateur de regex.
